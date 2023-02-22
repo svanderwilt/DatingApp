@@ -1,29 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 
   
+.nav-tabs > .nav-link {
+  background-color: #fff;
+  color: #325d88;
+  border: 0;
+}
+
   
-.member-tabset  > li > :not(.active) {
-    border-bottom: 0 !important;
-    color: #333333;
-  }
   
   
-  
-.member-tabset  > li:hover > .active {
-    border-bottom: 4px solid #E95420;
+.member-tabset  > li:hover > :not(.active) {
+    border-bottom: 2px solid #E95420 !important;
     position: relative;
   }
   
   
   .member-tabset > li > .active {
     color: #4e02a673;
-    border-bottom: 4px solid #e95420
+    border-bottom: 2px solid #e95420 !important
+  }
+
+  .member-tab-content {
+    margin-top: 10px;
   }
   
   
   
-  .nav-tabs > .nav-link {
-    background-color: #fff;
-    color: #325d88;
-    border: 0;
-  }
+  
