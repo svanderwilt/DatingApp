@@ -91,7 +91,7 @@
         </a>
       </li>
     </ul>
-    <div class="tab-content member-tab-content">
+    <div class="tab-content member-tab-content" #memberTabs>
       <div
         class="tab-pane fade show active member-tabset"
         id="about"
@@ -114,7 +114,7 @@
         ></ngx-gallery>
       </div>
       <div class="tab-pane fade" id="messages" aria-labelledby="messages-tab">
-        <p>Messages will go here</p>
+        <app-member-messages [username]="member.userName"></app-member-messages>
       </div>
     </div>
   </div>
