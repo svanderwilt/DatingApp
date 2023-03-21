@@ -91,9 +91,7 @@ export class MemberDetailComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 
   selectTab(heading: string) {
-    console.log('Im trying to get to this tab: ' + heading);
     if (this.memberTabs?.tabs) {
-      console.log('Im in the right spot!');
       this.memberTabs.tabs.find((x) => x.heading === heading)!.active = true;
     }
   }
